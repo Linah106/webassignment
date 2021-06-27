@@ -1,5 +1,29 @@
 <?php
 session_start();
+include 'connection.php';//insert connection...
+
+if(isset($_POST['register'])){
+    
+    $user=$_POST['user_name'];
+    $pass=$_POST['user_pass'];
+    
+
+    $sql="SELECT From register where `username` = '$user' and `password`='$pass'";
+
+    $result = mysqli_query($con,$sql);
+
+    if($result){
+        $_SESSION['success'] = "User Registered Successfully";
+        $_SESSION['user'] = $_POST['user_name'];
+        header('location:course.php');
+    }else{
+      echo "Something error..".mysqli_connect_error();
+    }
+
+
+
+
+}
 
 include('navbar.php');
 

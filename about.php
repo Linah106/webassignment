@@ -11,27 +11,59 @@ include('navbar.php');
          
             <h1>Education Background</h1>
 
-         <p>
+        <div>
+        
+          2010 - 2015 <br>
+            Shule kubwakubwa <br>
+            Nikamaliza <br>
             
-         </p>
+        </div>
+           
+        
         </div>
         <div class="half-p2">
          
             <h1>Career Goals</h1>
-          <p>
-
-          </p>
+         
+            <div>
+        
+          2010 - 2015 <br>
+            Shule kubwakubwa <br>
+            Nikamaliza <br>
+            
+        </div>
+         
         </div>
       </div>
-      <p> In my life i love to become  a poet and to come write a poem</p>
-         <pre>one of the reading poem "Time is too slow for those who wait,
-         too swift for those who fear,
-         too long for those who grieve, 
-         too short for those who rejoice,
-         but for those who love, time is eternity."
-         </pre>
+      <div class="full-paulina">
+        <div class="half-p1">
+         
+            <h1>Education Background</h1>
+
+        <div>
+        
+          2010 - 2015 <br>
+            Shule kubwakubwa <br>
+            Nikamaliza <br>
+            
+        </div>
+           
+        
+        </div>
+        <div class="half-p2">
+         
+            <h1>Career Goals</h1>
+         
+            <div>
+        
+          2010 - 2015 <br>
+            Shule kubwakubwa <br>
+            Nikamaliza <br>
+            
+        </div>
+         
+        </div>
+      </div>
+      
 
 </div>
-<?php
-include('footer.php');
-?>
