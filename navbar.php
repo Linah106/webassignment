@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if(isset($_SESSION['user'])){ ?>
     <!Doctype html>
 <html lang="en" dir="ltr">
@@ -19,7 +21,7 @@ if(isset($_SESSION['user'])){ ?>
 
             <li><a href="course.php" class="active">Courses</a></li>
             <li><a href="about.php" class="active">CV</a></li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a class="active" href="logout.php">Logout</a></li>
 
 
             </li>

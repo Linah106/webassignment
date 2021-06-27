@@ -1,23 +1,35 @@
 <?php
-session_start();
+
+/*
+
+if(isset($_SESSION['']))
+{
+  header('location:v.php');
+
+} 
+
+*/
+
+
+include('navbar.php');
 include 'connection.php';//insert connection...
 
-if(isset($_POST['register'])){
+if(isset($_POST['button'])){
     
-    $user=$_POST['user_name'];
-    $pass=$_POST['user_pass'];
+    $user=$_POST['username'];
+    $pass=$_POST['password'];
     
-
-    $sql="SELECT From register where `username` = '$user' and `password`='$pass'";
+    $sql="SELECT * From register where `username` = '$user' and `password`='$pass'";
 
     $result = mysqli_query($con,$sql);
-
-    if($result){
+$rows = mysqli_num_rows($result);
+    if($rows>0){
         $_SESSION['success'] = "User Registered Successfully";
-        $_SESSION['user'] = $_POST['user_name'];
+        $_SESSION['user'] = $_POST['username'];
         header('location:course.php');
     }else{
-      echo "Something error..".mysqli_connect_error();
+      echo "login error ".mysqli_connect_error();
+      exit;
     }
 
 
@@ -25,7 +37,6 @@ if(isset($_POST['register'])){
 
 }
 
-include('navbar.php');
 
 ?>
         <div class="welc">
