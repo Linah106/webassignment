@@ -1,0 +1,40 @@
+
+
+body{
+  background-color: white;
+}
+
+.headerform{
+  width: 31.3%;
+  margin:50px auto 0px;
+  padding: 10px;
+  border:1px solid #B0C4DE;
+  background-color: #2B3856 ;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  border-bottom: none;
+  color:white;
+}
+
+.myform{
+  width:30%;
+  margin:0px auto;
+  padding: 20px;
+  border:1px solid #B0C4DE;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group{
+  width: 50%;
+  border-radius: 10px;
+  padding:20px;
+  margin: auto;
+}
+.btn{
+  width: 100%;
+  color:white;
+  background-color: #2B3856;
+  padding: 10px;
+  border:none;
+  border-radius: 10px;
+  cursor:progress;
+}
