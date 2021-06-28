@@ -26,7 +26,8 @@
 
     include 'connection.php';//insert connection...
     if(isset($_POST['send'])){
-
+session_start();
+        $name = $_SESSION['user'];
         $course=$_POST['course'];
         $code=$_POST['number'];
         $description=$_POST['corse_descrp'];
@@ -60,7 +61,10 @@ echo "Data saved successfully!";
   </div>
     <div class="menu">
       <div class="headerform">
-      <h1>Course register</h1>
+      <form action="regcourses.php" method="get">
+        <button type="submit" name="view courses">view courses</button>
+      </form>
+      <h1>Course register </h1>
     </div>
     <form class="myform" action="#" method="POST">
       <div class="input-group">
