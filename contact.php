@@ -1,19 +1,25 @@
+
 <!Doctype html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>My Layout</title>
-<link rel="stylesheet" href="linahcss.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="form.css">
+
   </head>
   <body>
     <div class="main">
   <div class="header">
-      <h1 style="color:orange;">WELCOME TO MY SITE</h1>
+  <h1 style="color:orange;">CV Store</h1>
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html" class="active">About me</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.php" class="active">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+
+            <li><a href="register.php">Register</a></li>
+              <li><a href="login.php">Login</a></li>
+
 
             </li>
           </ul>
