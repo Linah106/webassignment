@@ -48,7 +48,7 @@
       <h1>Course register</h1>
     </div>
     <div class="myform" action="#" method="POST">
-     <table>
+     <table border="1">
      <?php $d = 1; while($row = mysqli_fetch_array($result)) {?>
         <tr>
         <td><?php echo $d; ?></td>
